@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit CLone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .logo img {
+        width: 184px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Segoe UI";
+    }
+
+    .right ul {
+        display: flex;
+        gap: 34px;
+    }
+
+    .right ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .right ul li span {
+        padding: 0 5px;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        margin: 70px;
+        font-family: sans-serif;
+    }
+
+    .first span {
+        font-size: 40px;
+    }
+
+    section span img {
+        width: 82px;
+        margin: 0 23px;
+    }
+
+    .first p {
+        font-size: 23px;
+        width: 44vw;
+        text-align: center;
+    }
+
+
+
+    .btn {
+        background: #00b6d1;
+        padding: 14px 16px;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 700;
+        margin: 12px 0;
+        cursor: pointer;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .green {
+        background-color: #5cb85c;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .second {
+        max-width: 50vw;
+        margin: auto;
+    }
+
+    .item {
+        padding: 23px;
+        background: #f9f9f9;
+        border-radius: 12px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .item-lang {
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px
+    }
+
+    .download :nth-child(2) {
+        font-size: 23px;
+    }
+
+    .download img {
+        height: 41px;
+        padding: 0px 12px;
+        width: 131px;
+    }
+
+    .download {
+        display: flex;
+        font-family: sans-serif;
+        gap: 10px;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1145px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Background-2.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>Pricing </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>Resources </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>About Us </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="">
+            </div>
+
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <span> Download <b>UltraEdit</b> for Windows<img width="34"
+                    src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt=""></span>
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+                text editor.</p>
+            <div>
+                <button class="btn">
+                    <a href="https://i.imgflip.com/gyuzp.gif">DOWNLOAD MAC OR LINUX VERSION</a>
+                </button>
+            </div>
+
+
+        </section>
+
+        <section class="second">
+            <div class="download">
+                <img src="Background-2.png" alt="">
+                <span>Download UltraEdit </span>
+            </div>
+
+            <div class="grid">
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a
+                            href="https://www.bing.com/th/id/OGC.2cf3bb65763c7539c5faf28af5b94bfe?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia1.tenor.com%2fm%2fjncM2BNxpqQAAAAC%2fdo-you-speaka-any-english-speaka.gif&ehk=vhY4E14Kg1An4D8Uj3BPu2TZk5St8ihZKcdIInUXxXI%3d">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://www.bing.com/th/id/OGC.2cf3bb65763c7539c5faf28af5b94bfe?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia1.tenor.com%2fm%2fjncM2BNxpqQAAAAC%2fdo-you-speaka-any-english-speaka.gif&ehk=vhY4E14Kg1An4D8Uj3BPu2TZk5St8ihZKcdIInUXxXI%3d">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Hindi</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/3F71BfB3NXYAAAAC/hindi-kuchh.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/3F71BfB3NXYAAAAC/hindi-kuchh.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Deutsche</div>
+                    <button class="btn blue"><a
+                            href="https://www.bing.com/images/search?view=detailV2&ccid=JwZLVryz&id=5B07F02BA99FE0EDD09F5ABC4DFCAEFDE9A21FF1&thid=OIP.JwZLVryzMqHJj8BCY3XQxwHaDt&mediaurl=https%3a%2f%2fwww.lavanguardia.com%2fr%2fGODO%2fLV%2fp0%2fWebSite%2f2014%2f08%2f15%2fRecortada%2f34508-59105-hitler-500-250-20140815140002%40LaVanguardia-Web.gif&exph=250&expw=500&q=hitler+gif&FORM=IRPRST&ck=EE6F69D55A9EAD7B9C8088DD71F4306C&selectedIndex=1&itb=0">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://www.bing.com/images/search?view=detailV2&ccid=JwZLVryz&id=5B07F02BA99FE0EDD09F5ABC4DFCAEFDE9A21FF1&thid=OIP.JwZLVryzMqHJj8BCY3XQxwHaDt&mediaurl=https%3a%2f%2fwww.lavanguardia.com%2fr%2fGODO%2fLV%2fp0%2fWebSite%2f2014%2f08%2f15%2fRecortada%2f34508-59105-hitler-500-250-20140815140002%40LaVanguardia-Web.gif&exph=250&expw=500&q=hitler+gif&FORM=IRPRST&ck=EE6F69D55A9EAD7B9C8088DD71F4306C&selectedIndex=1&itb=0">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Spanish</div>
+                    <button class="btn blue"><a
+                            href="https://media1.tenor.com/images/45a64125cfbc2491061df0f612299b5c/tenor.gif?itemid=6140695">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://media1.tenor.com/images/45a64125cfbc2491061df0f612299b5c/tenor.gif?itemid=6140695">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Itailian</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">French</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Sanskrit</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Urdu</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Tamil</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Telgu</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Malayalam</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Sindhi</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Russian</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Chinese</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            32-bit</a></button>
+                    <button class="btn blue"><a
+                            href="https://c.tenor.com/QCJqQm2uaFwAAAAC/it-worked-success.gif">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
